@@ -31,6 +31,7 @@ defmodule OpentelemetryLiveView do
                  {:live_view, :mount},
                  {:live_view, :handle_params},
                  {:live_view, :handle_event},
+                 {:live_view, :render},
                  {:live_component, :handle_event}
                ]
                |> Enum.flat_map(fn {kind, callback_name} ->
